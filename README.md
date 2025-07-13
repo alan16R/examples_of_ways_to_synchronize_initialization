@@ -5,7 +5,7 @@
 
 This workspace contains three separate PlatformIO projects that illustrate possible ways of initialization of a FreeRTOS project.
 
-The goal was to investigate ways that a FreeRTOS project can handle a long term initialization process where until a successful point
+My goal was to investigate ways that a FreeRTOS project can handle a long term initialization process where until a successful point
 has been reached no further action can be taken by the user's tasks. An example of this is WiFi startup, which can take 2 or 3 seconds or sometimes longer.
 
 I wanted to try out different ways and explore the mechanism in detail to decide which one to use for my current projects.
@@ -33,7 +33,7 @@ An event group is controlled by a bit mask. There are a number of options as to 
 
 ## Other Options
 
-I also have use a queue to send 'init complete' messages to other tasks. I may add an example of that for completeness.
+In the past I also haved use a queue to send 'init complete' messages to other tasks. I may add an example of that for completeness.
 
 ## Conclusion
 
