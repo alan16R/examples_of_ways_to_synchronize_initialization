@@ -5,13 +5,12 @@
 
 This workspace contains three separate PlatformIO projects that illustrate possible ways of initialization of a FreeRTOS project.
 
-My goal was to investigate ways that a FreeRTOS project can handle a long term initialization process where until a successful point
-has been reached no further action can be taken by the user's tasks. An example of this is WiFi startup, which can take 2 or 3 seconds or sometimes longer.
+My goal was to investigate ways that a FreeRTOS project can handle a long term initialization process such that until the initialization is completed no further action can be taken by the user's tasks. An example of this is WiFi startup, which can take 2 or 3 seconds or sometimes longer.
 
 I wanted to try out different ways and explore the mechanism in detail to decide which one to use for my current projects.
 
-Each example project is a completely independent project and you can open them in the PlatformIO UI and build and run them. They have a common
-structure - one `initTask` and three 'user' tasks - `TaskA`, `TaskB` and `TaskC`. Each of the 'user' tasks does nothing but print that its running.
+Each example project is a completely independent project and you can open them in the PlatformIO UI and build and run them. They have a common 
+structure - one `initTask` and three 'user' tasks - `TaskA`, `TaskB` and `TaskC`. Each of the 'user' tasks does nothing but print that its runn ing.
 
 ## Description
 
