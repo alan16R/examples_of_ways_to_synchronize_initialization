@@ -33,7 +33,7 @@ An event group is controlled by a bit mask. There are a number of options as to 
 
 ## Other Options
 
-In the past I also haved use a queue to send 'init complete' messages to other tasks. I may add an example of that for completeness.
+In the past I also haved used a queue to send 'init complete' messages to other tasks. I may add an example of that for completeness.
 
 ## Conclusion
 
