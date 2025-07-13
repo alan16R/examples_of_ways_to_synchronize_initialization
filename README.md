@@ -35,6 +35,15 @@ An event group is controlled by a bit mask. There are a number of options as to 
 
 In the past I also haved used a queue to send 'init complete' messages to other tasks. I may add an example of that for completeness.
 
+## Running the Projects
+
+Open the PlatformIO IDE in Visual Studio code and use 'Open Folder' on the specific project folder. Running the 'build' task in the PIO plugin should build the project. Currently the
+code produces a Arduino (C) Nano ESP-32S3 image and a Raspberry Pi Pico RP2040 image using the excellent Earle Philower build core. 
+
+I have only provided a PlatformIO version because that's what I use in my own microcontroller projects. If anyone is interested I think that simply moving the main.cpp to a .ino file
+should be sufficient. Please let me know if there is a need for this.
+
+
 ## Conclusion
 
 I think that the event group approach is my favorite from these options. 
